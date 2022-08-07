@@ -9,7 +9,7 @@ class Header extends StatelessWidget {
     return Container(
       height: 70.0,
       padding: const EdgeInsets.symmetric(
-        horizontal: 100,
+        horizontal: 130,
       ),
       decoration: BoxDecoration(
         color: Colors.white,
@@ -22,6 +22,7 @@ class Header extends StatelessWidget {
         ],
       ),
       child: Row(
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
           SvgPicture.asset(
             'assets/images/logo.svg',
@@ -95,7 +96,7 @@ class HeaderItem extends StatelessWidget {
         ),
         Text(title,
             style: const TextStyle(
-              fontSize: 18,
+              fontSize: 16,
             )),
       ],
     );
